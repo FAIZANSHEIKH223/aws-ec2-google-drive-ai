@@ -1,8 +1,4 @@
 
-# AWS ECS Bedrock AI Service
-
-A Python REST API running in Amazon ECS that uses Amazon Bedrock.
-
 ## Endpoints
 
 - GET /health
