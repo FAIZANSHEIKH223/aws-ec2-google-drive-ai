@@ -1,8 +1,40 @@
+.env
+.env.*
+!.env.example
 
+# Secrets and Google authentication files
+credentials.json
+token.json
+service-account*.json
+*.pem
+*.key
+
+# Large model files and local model cache
+models/*
+!models/.gitkeep
+*.gguf
+*.safetensors
+*.bin
+
+# Python
 __pycache__/
 *.py[cod]
 .venv/
 venv/
-.env
-.env.*
-.pytest_cache/
+
+# Terraform state and generated files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+terraform.auto.tfvars
+terraform.auto.tfvars.json
+tfplan
+tfplan.*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

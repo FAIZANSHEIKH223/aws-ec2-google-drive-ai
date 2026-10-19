@@ -1,0 +1,6 @@
+# This file expects a GGUF model at /models/model.gguf inside the Ollama container.
+# Copy the selected model into the local models/ folder before importing it.
+FROM /models/model.gguf
+
+PARAMETER temperature 0.2
+SYSTEM You are a helpful assistant. Explain technical topics clearly and accurately.
